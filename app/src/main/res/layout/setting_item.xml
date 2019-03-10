@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLL"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:minHeight="50dp"
+    android:background="@drawable/item_selector"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/itemTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="24dp"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/itemRightLL"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingVertical="3dp"
+        android:layout_marginRight="14dp"
+        android:layout_gravity="center"
+        android:gravity="center|end">
+
+        <TextView
+            android:id="@+id/itemDetailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginRight="20dp"
+            android:textAlignment="textEnd" />
+        <ImageView
+            android:id="@+id/itemNextIV"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/next"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">废柴</string>
+    <string name="spd" />
+    <string name="original_y" />
+    <string name="isUp" />
+
+    <string name="gpsfollow">追随</string>
+    <string name="gpslocate">定位</string>
+    <string name="gpsrotate">旋转</string>
+
+
+</resources>

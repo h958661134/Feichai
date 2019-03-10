@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:padding="4dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:layout_weight="1">
+        <com.example.feichai.myapplication.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/user_image"
+            app:border_color="#ccc"
+            app:border_width="1dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:id="@+id/my_footprint_item_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/green"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/my_footprint_item_next"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:paddingLeft="15dp"
+        android:layout_weight="1"
+        android:layout_gravity="right|center"
+        android:src="@drawable/next"
+        />
+
+</LinearLayout>

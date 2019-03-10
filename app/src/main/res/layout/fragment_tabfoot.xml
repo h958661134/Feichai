@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:background="#F8D9BD"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_search_Fragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        style="@style/Linearlayout_Style">
+        <ImageView
+            android:id="@+id/image_search_Fragment"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/search"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_personal_center_Fragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        style="@style/Linearlayout_Style">
+        <ImageView
+            android:id="@+id/image_personal_center_Fragment"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/personal_center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

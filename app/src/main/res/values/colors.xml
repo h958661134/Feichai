@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#50935D</color>
+    <color name="colorPrimaryDark">#50935D</color>
+    <color name="colorAccent">#50935D</color>
+
+    <color name="black">#000000</color><!-- 黑色 -->
+    <color name="green">#50935D</color>
+    <color name="green1">#71BE3E</color>
+    <color name="gray1">#F8F8FA</color>
+    <color name="white">#fff</color>
+    <color name="gray2">#ECECEE</color>
+    <color name="red">#FF0000</color>
+    <color name="darkgrey">#C0C0C0</color>
+    <drawable name="pressed">#ECECEE</drawable>
+    <drawable name="unpressed">#fff</drawable>
+    <color name="fenleicolor">#000</color>
+    <color name="pink">#F8D9BD</color>
+    <color name="ad1">#29903f</color>
+    <color name="ad3">#147120</color>
+    <color name="ad2">#087610</color>
+    <color name="integral">#F8E8DB</color>
+
+</resources>
+
+

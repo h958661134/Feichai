@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.feichai.myapplication">
+    //地图
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity_Out" />
+        <activity android:name=".Find_password" />
+        <activity android:name=".Register" />
+        <activity android:name=".Personal_Center" />
+        <activity android:name=".My_Application" />
+        <activity android:name=".Setting" />
+        <activity android:name=".FeedbackSettings" />
+        <activity android:name=".InfoSettings" />
+        <activity android:name=".My_Transaction" />
+        <activity android:name=".My_Footprint" />
+        <activity android:name=".After_Sale" />
+        <activity
+            android:name=".My_Energy_Tree"
+            android:hardwareAccelerated="false"
+            android:largeHeap="true" />
+        <activity android:name=".About_us" />
+        <activity android:name=".Call_us" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".Info_Change_Headpic" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".zxing.activity.CaptureActivity" />
+        <activity android:name=".zxing.activity.ResultActivity" />
+        <activity android:name=".Trade_Activity" />
+        <activity android:name=".ClassifyActivity" />
+        <activity android:name=".Tradesuccess" />
+        <activity android:name=".IntegralActivity" />
+        <activity android:name=".Info_Find_password"/>
+
+
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="83cacffb7852b121a2547b3f819926d1" />
+
+        <activity android:name=".Address" />
+    </application>
+
+</manifest>

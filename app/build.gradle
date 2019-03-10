@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        feichai {
+            keyAlias 'key'
+            keyPassword 'Android'
+            storeFile file('D:/废柴/feichai.jks')
+            storePassword 'Android'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.feichai.myapplication"
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+apply plugin: 'com.mob.sdk'
+
+// 在MobSDK的扩展中注册SMSSDK的相关信息
+MobSDK {
+    appKey "271bd74325419"
+    appSecret "2c06cfed3c64190080752ec4891d7ed5"
+
+    SMSSDK {
+        gui false
+    }
+
+//    ShareSDK {
+//
+//
+//    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.amap.api:3dmap:latest.integration'
+    implementation 'com.amap.api:location:latest.integration'
+    implementation files('libs/zxing.jar')
+    implementation files('libs/mysql-connector-java-5.1.39-bin.jar')
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
+    implementation 'com.wang.avi:library:2.1.3'
+}
